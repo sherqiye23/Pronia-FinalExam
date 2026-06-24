@@ -1,5 +1,5 @@
 import { FaSquarePhone } from "react-icons/fa6";
-import { CiSearch } from "react-icons/ci";
+import { FaPlus } from "react-icons/fa6";
 import { FaStoreAlt } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa";
@@ -21,7 +21,9 @@ export default function Navbar() {
             <div className="image"><img src="https://htmldemo.net/pronia/pronia/assets/images/logo/dark.png" alt="." /></div>
           </NavLink>
           <div className="icons">
-            <CiSearch />
+            <NavLink to={"/add"} style={{ color: "#000" }}>
+              <FaPlus />
+            </NavLink>
             <NavLink to={"/basket"} style={{ color: "#000" }}>
               <FaStoreAlt />
             </NavLink>
